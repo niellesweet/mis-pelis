@@ -11,12 +11,15 @@
 	font-family: 'Anton', sans-serif;
 	font-size: 6rem;
 	}
-	a button{
-		@include button;
-		color: $font-color1;
-	}
-	a p{
-		color: $font-color2;
+	a {
+		button{
+			@include button;
+			color: $font-color1;
+		}
+		p{
+			color: $font-color2;
+		}
+	
 	}
 }
 .navbar.navbar-default{
@@ -31,19 +34,21 @@
 
 #create{
 	background-color: $background2;
-}
-#create #create-form .input-box{
-	margin-top: 10vh;
-}
-#create #create-form p{
-	color: $font-color1;
-}
-#create #create-form .input-group input{
-	width: 190%;
-}
-#create #create-form button{
-	margin-top:10vh;
-	background-color: $background3;
-	color: $font-color2;
-	width: 60%;
+	#create-form{
+		.input-box{
+			margin-top: 10vh;
+		}
+		p{
+			color: $font-color1;
+		}
+		.input-group input{
+			width: 190%;
+		}
+		button{
+			margin-top:10vh;
+			background-color: $background3;
+			color: $font-color2;
+			width: 60%;
+		}
+	}
 }
