@@ -5,17 +5,45 @@
 }
 #inicio{
 	background-color: $background1;
-}
-#inicio h1{
+	h1{
 	margin: 30vh 0 10vh auto;
 	color: $font-color2;
 	font-family: 'Anton', sans-serif;
 	font-size: 6rem;
+	}
+	a button{
+		@include button;
+		color: $font-color1;
+	}
+	a p{
+		color: $font-color2;
+	}
 }
-#inicio a button{
-	@include button;
+.navbar.navbar-default{
+	background-color: $background3;
+	color: $font-color2;
+	button.navbar-toggle{
+		float: left; 
+		margin-left: 15px;
+		border: none;
+	}
+}
+
+#create{
+	background-color: $background2;
+}
+#create #create-form .input-box{
+	margin-top: 10vh;
+}
+#create #create-form p{
 	color: $font-color1;
 }
-#inicio a p{
+#create #create-form .input-group input{
+	width: 190%;
+}
+#create #create-form button{
+	margin-top:10vh;
+	background-color: $background3;
 	color: $font-color2;
+	width: 60%;
 }
