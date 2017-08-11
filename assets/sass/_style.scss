@@ -1,0 +1,21 @@
+*{
+	margin:0;
+	padding:0;
+	font-family: 'Catamaran', sans-serif;
+}
+#inicio{
+	background-color: $background1;
+}
+#inicio h1{
+	margin: 30vh 0 10vh auto;
+	color: $font-color2;
+	font-family: 'Anton', sans-serif;
+	font-size: 6rem;
+}
+#inicio a button{
+	@include button;
+	color: $font-color1;
+}
+#inicio a p{
+	color: $font-color2;
+}
